@@ -1,19 +1,25 @@
-public class MembroComunidadeEscolar extends persona {
+public class MembroComunidadeEscolar extends Persona {
     private int codigoCentro;
     private String nomeCentro;
 
-    public MembroComunidadeEscolar (String nom, String dni, int edade, int codCentro, String nomCentro){
-        super(nom, dni, edade);
-        codigoCentro = codCentro;
-        nomeCentro = nomCentro;
+    public MembroComunidadeEscolar() {
+        super();
+        codigoCentro = 525;
+        nomeCentro   = "perp";
     }
 
-    public int getCodigoCentro(){
+    public MembroComunidadeEscolar(String nom, String dni, int edad, int codCentro, String nomCentro) {
+        super(nom, dni, edad);
+        codigoCentro = codCentro;
+        nomeCentro   = nomCentro;
+    }
+
+    public int getCodigoCentro() {
         return codigoCentro;
     }
 
-    public void setCodigoCentro(int novoCodCentro){
-        if (novoCodCentro>0) codigoCentro = novoCodCentro;
+    public void setCodigoCentro(int novoCodCentro) {
+        if (novoCodCentro > 0) codigoCentro = novoCodCentro;
         else codigoCentro = 0;
     }
 
