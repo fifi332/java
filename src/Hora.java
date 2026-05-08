@@ -9,9 +9,5 @@ public class Hora {
         this.segundos = segundos;
     }
 
-    public Hora(){
-
-    }
-
 }
 
